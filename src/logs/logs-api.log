@@ -1,0 +1,132 @@
+[2023-06-10T03:01:15.090Z] info: undefined
+[2023-06-10T03:01:52.173Z] info: llave duplicada viola restricción de unicidad «users_email_key»
+[2023-06-10T03:03:47.227Z] info: Can't find /api/v1/auth/sdassignup on this server! 🧨
+[2023-06-10T03:05:37.991Z] info: Can't find /api/v1/auth/sdassignup on this server! 🧨 || undefined undefined
+[2023-06-10T03:06:01.987Z] info: Can't find /api/v1/auth/sdassignup on this server! 🧨 || undefined undefined
+[2023-06-10T03:08:21.897Z] info: [object Object] || undefined undefined
+[2023-06-10T03:08:29.457Z] info: undefined || undefined undefined
+[2023-06-10T03:09:46.824Z] info: undefined || undefined undefined
+[2023-06-10T03:11:19.397Z] info: undefined || undefined undefined
+[2023-06-10T03:12:24.810Z] info: undefined || undefined undefined
+[2023-06-10T03:16:14.528Z] info: undefined || undefined undefined
+[2023-06-10T03:16:15.457Z] info: undefined || undefined undefined
+[2023-06-10T03:17:17.032Z] info: Duplicate field value: please use another value || undefined undefined
+[2023-06-10T03:19:29.028Z] info: Duplicate field value: please use another value || undefined undefined
+[2023-06-10T03:19:30.118Z] info: Duplicate field value: please use another value || undefined undefined
+[2023-06-10T03:19:35.300Z] info: undefined || undefined undefined
+[2023-06-10T03:19:42.454Z] info: Duplicate field value: please use another value || undefined undefined
+[2023-06-13T04:13:02.599Z] info: Cannot read properties of undefined (reading 'password') || undefined undefined
+[2023-06-13T04:15:27.267Z] info: Current password is incorrect! || undefined undefined
+[2023-06-14T02:41:34.602Z] info: The "original" argument must be of type function. Received an instance of Object || undefined undefined
+[2023-06-14T02:42:47.693Z] info: The "original" argument must be of type function. Received an instance of Object || undefined undefined
+[2023-06-14T02:44:24.008Z] info: User is not defined || undefined undefined
+[2023-06-14T02:44:36.554Z] info: User is not defined || undefined undefined
+[2023-06-14T02:45:34.878Z] info: Current password is incorrect! || undefined undefined
+[2023-06-14T02:50:34.416Z] info: Can't find /api/v1/renew on this server! 🧨 || undefined undefined
+[2023-06-14T02:55:14.057Z] info: The "original" argument must be of type function. Received an instance of Object || undefined undefined
+[2023-06-14T03:00:18.659Z] info: The "original" argument must be of type function. Received an instance of Object || undefined undefined
+[2023-06-14T03:00:20.094Z] info: The "original" argument must be of type function. Received an instance of Object || undefined undefined
+[2023-06-14T03:01:25.057Z] info: The "original" argument must be of type function. Received an instance of Object || undefined undefined
+[2023-06-14T03:11:19.695Z] info: User recently changed password! Please log in again. || undefined undefined
+[2023-06-14T03:47:57.986Z] info: User recently changed password! Please log in again. || undefined undefined
+[2023-06-15T01:58:22.135Z] info: jwt expired || undefined undefined
+[2023-06-15T01:59:17.834Z] info: Your token has expired! Please log in again. || undefined undefined
+[2023-06-15T03:08:16.497Z] info: Your token has expired! Please log in again. || undefined undefined
+[2023-06-15T03:08:25.043Z] info: Your token has expired! Please log in again. || undefined undefined
+[2023-06-15T03:08:25.951Z] info: Your token has expired! Please log in again. || undefined undefined
+[2023-06-15T03:08:26.629Z] info: Your token has expired! Please log in again. || undefined undefined
+[2023-06-17T01:29:36.970Z] info: Cannot destructure property 'id' of 'req.sessionUser' as it is undefined. || undefined undefined
+[2023-06-17T01:30:07.482Z] info: Cannot destructure property 'id' of 'req.sessionUser' as it is undefined. || undefined undefined
+[2023-06-17T01:30:08.860Z] info: Cannot destructure property 'id' of 'req.sessionUser' as it is undefined. || undefined undefined
+[2023-06-17T01:31:27.872Z] info: You are not logged in! Please log in to get access. || undefined undefined
+[2023-06-17T01:31:55.290Z] info: User with that email not found! || undefined undefined
+[2023-06-17T01:44:35.999Z] info: You are not logged in! Please log in to get access. || undefined undefined
+[2023-06-17T03:37:00.467Z] info: jwt expired || undefined undefined
+[2023-06-17T03:37:35.482Z] info: User is not defined || undefined undefined
+[2023-06-20T02:32:57.999Z] info: Post is not defined || undefined undefined
+[2023-06-20T02:33:26.301Z] info: Post is not defined || undefined undefined
+[2023-06-20T02:34:04.139Z] info: AppError is not defined || undefined undefined
+[2023-06-20T02:34:13.377Z] info: No post found with that ID || undefined undefined
+[2023-06-20T02:36:06.717Z] info: You are not logged in! Please log in to get access. || undefined undefined
+[2023-06-20T02:36:13.636Z] info: la sintaxis de entrada no es válida para tipo boolean: «active» || undefined undefined
+[2023-06-20T02:38:25.951Z] info: Comment is not defined || undefined undefined
+[2023-06-20T02:38:56.226Z] info: Comment is not defined || undefined undefined
+[2023-06-20T02:39:11.587Z] info: AppError is not defined || undefined undefined
+[2023-06-20T02:39:17.357Z] info: No comment found with that ID || undefined undefined
+[2023-06-20T02:47:32.168Z] info: postMiddleware is not defined || undefined undefined
+[2023-06-20T02:47:42.685Z] info: WHERE parameter "id" has invalid "undefined" value || undefined undefined
+[2023-06-20T02:48:05.873Z] info: async is not defined || undefined undefined
+[2023-06-20T02:50:08.359Z] info: WHERE parameter "id" has invalid "undefined" value || undefined undefined
+[2023-06-20T02:50:25.598Z] info: WHERE parameter "id" has invalid "undefined" value || undefined undefined
+[2023-06-20T02:53:09.564Z] info: AppError is not defined || undefined undefined
+[2023-06-20T02:53:22.054Z] info: Post not found! 🧨 || undefined undefined
+[2023-06-20T02:54:38.073Z] info: No comment found with that ID || undefined undefined
+[2023-06-20T03:14:27.903Z] info: inserción o actualización en la tabla «comments» viola la llave foránea «comments_postId_fkey» || undefined undefined
+[2023-06-20T03:14:38.496Z] info: inserción o actualización en la tabla «comments» viola la llave foránea «comments_postId_fkey» || undefined undefined
+[2023-06-20T03:15:27.312Z] info: inserción o actualización en la tabla «comments» viola la llave foránea «comments_postId_fkey» || undefined undefined
+[2023-06-20T03:15:28.792Z] info: inserción o actualización en la tabla «comments» viola la llave foránea «comments_postId_fkey» || undefined undefined
+[2023-06-20T03:16:22.673Z] info: inserción o actualización en la tabla «comments» viola la llave foránea «comments_postId_fkey» || undefined undefined
+[2023-06-20T03:16:47.049Z] info: inserción o actualización en la tabla «comments» viola la llave foránea «comments_postId_fkey» || undefined undefined
+[2023-06-20T03:17:20.182Z] info: inserción o actualización en la tabla «comments» viola la llave foránea «comments_postId_fkey» || undefined undefined
+[2023-06-20T03:29:19.134Z] info: You are not logged in! Please log in to get access. || undefined undefined
+[2023-06-20T03:31:08.066Z] info: jwt expired || undefined undefined
+[2023-06-20T03:44:31.946Z] info: No comment found with that ID || undefined undefined
+[2023-06-20T03:44:41.273Z] info: You not are the owner of this account! || undefined undefined
+[2023-06-20T03:44:54.506Z] info: You not are the owner of this account! || undefined undefined
+[2023-06-20T03:58:51.840Z] info: Can't find /api/v1/me on this server! 🧨 || undefined undefined
+[2023-06-20T03:59:04.590Z] info: la sintaxis de entrada no es válida para tipo integer: «me» || undefined undefined
+[2023-06-20T03:59:45.291Z] info: la sintaxis de entrada no es válida para tipo integer: «me» || undefined undefined
+[2023-06-20T03:59:55.128Z] info: la sintaxis de entrada no es válida para tipo integer: «me» || undefined undefined
+[2023-06-20T04:02:37.024Z] info: Cannot read properties of undefined (reading 'id') || undefined undefined
+[2023-06-20T04:05:07.535Z] info: invalid signature || undefined undefined
+[2023-06-20T04:05:20.302Z] info: invalid signature || undefined undefined
+[2023-06-20T04:08:50.290Z] info: Can't find /api/v1/profile/1 on this server! 🧨 || undefined undefined
+[2023-06-20T04:10:15.624Z] info: la sintaxis de entrada no es válida para tipo integer: «profile» || undefined undefined
+[2023-06-21T04:03:19.387Z] info: Cannot read properties of undefined (reading '_location') || undefined undefined
+[2023-06-21T04:04:20.023Z] info: Cannot read properties of undefined (reading '_location') || undefined undefined
+[2023-06-21T04:05:34.831Z] info: Cannot read properties of undefined (reading '_location') || undefined undefined
+[2023-06-21T04:05:35.888Z] info: Cannot read properties of undefined (reading '_location') || undefined undefined
+[2023-06-21T04:10:41.953Z] info: Cannot read properties of undefined (reading '_location') || undefined undefined
+[2023-06-22T01:39:57.867Z] info: jwt expired || undefined undefined
+[2023-06-22T01:42:01.156Z] info: Firebase Storage: Object 'images/users/1687397487187-Imagen de WhatsApp 2023-06-17 a las 22.38.09.png' does not exist. (storage/object-not-found) || undefined undefined
+[2023-06-22T03:13:23.545Z] info: Unexpected field || undefined undefined
+[2023-06-22T03:14:10.810Z] info: jwt expired || undefined undefined
+[2023-06-22T03:14:29.820Z] info: ref is not defined || undefined undefined
+[2023-06-22T03:14:57.183Z] info: uploadBytes is not defined || undefined undefined
+[2023-06-22T03:27:09.743Z] info: Tipo de archivo no permitido || undefined undefined
+[2023-06-23T02:20:38.879Z] info: imgRef.getDownloadURL is not a function || undefined undefined
+[2023-06-23T02:22:28.150Z] info: post.user.map is not a function || undefined undefined
+[2023-06-23T02:22:37.310Z] info: Cannot read properties of undefined (reading 'map') || undefined undefined
+[2023-06-23T03:23:34.300Z] info: jwt expired || undefined undefined
+[2023-06-23T03:23:49.619Z] info: PostImg is not defined || undefined undefined
+[2023-06-23T03:24:03.430Z] info: PostImg is not defined || undefined undefined
+[2023-06-23T03:24:04.440Z] info: PostImg is not defined || undefined undefined
+[2023-06-23T03:25:07.031Z] info: Can't find /api/v1/posts19 on this server! 🧨 || undefined undefined
+[2023-06-23T03:46:04.492Z] info: koin is not defined || undefined undefined
+[2023-06-29T01:23:15.314Z] info: jwt malformed || undefined undefined
+[2023-06-29T01:28:30.262Z] info: User with that email not found! || undefined undefined
+[2023-06-29T01:35:08.812Z] info: jwt malformed || undefined undefined
+[2023-06-29T01:38:52.025Z] info: jwt malformed || undefined undefined
+[2023-06-29T01:38:52.040Z] info: jwt malformed || undefined undefined
+[2023-06-29T01:39:05.420Z] info: jwt malformed || undefined undefined
+[2023-06-29T01:39:05.424Z] info: jwt malformed || undefined undefined
+[2023-06-29T01:42:49.464Z] info: Unexpected field || undefined undefined
+[2023-06-29T01:43:23.493Z] info: Unexpected field || undefined undefined
+[2023-06-29T01:43:40.181Z] info: Unexpected field || undefined undefined
+[2023-06-29T01:43:53.882Z] info: jwt malformed || undefined undefined
+[2023-06-29T01:44:10.465Z] info: Unexpected field || undefined undefined
+[2023-06-29T02:02:20.422Z] info: Unexpected field || undefined undefined
+[2023-06-29T02:07:47.694Z] info: jwt malformed || undefined undefined
+[2023-06-29T02:08:08.728Z] info: jwt malformed || undefined undefined
+[2023-06-29T02:08:33.860Z] info: jwt malformed || undefined undefined
+[2023-06-29T02:08:56.862Z] info: jwt malformed || undefined undefined
+[2023-06-29T02:15:29.176Z] info: Cannot read properties of undefined (reading 'map') || undefined undefined
+[2023-06-29T02:15:49.418Z] info: You are not logged in! Please log in to get access. || undefined undefined
+[2023-06-29T02:16:09.607Z] info: You are not logged in! Please log in to get access. || undefined undefined
+[2023-06-29T02:19:22.647Z] info: jwt malformed || undefined undefined
+[2023-06-29T02:19:40.516Z] info: You are not logged in! Please log in to get access. || undefined undefined
+[2023-06-29T02:21:24.956Z] info: You are not logged in! Please log in to get access. || undefined undefined
+[2023-06-29T02:22:45.462Z] info: jwt malformed || undefined undefined
+[2023-06-29T02:22:49.874Z] info: jwt malformed || undefined undefined
+[2023-06-29T02:22:49.877Z] info: jwt malformed || undefined undefined
+[2023-06-29T02:25:45.121Z] info: jwt malformed || undefined undefined
