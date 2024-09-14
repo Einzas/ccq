@@ -47,6 +47,11 @@ const User = db.define('user', {
     type: DataTypes.ENUM('admin', 'partner', 'user', 'moderator'),
     allowNull: false,
   },
+
+  status: {
+    type: DataTypes.ENUM('active', 'inactive', 'banned'),
+    allowNull: false,
+  },
 });
 
 module.exports = User;

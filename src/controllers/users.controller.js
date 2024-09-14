@@ -1,51 +1,48 @@
 const User = require('../models/user.model');
 const catchAsync = require('../utils/catchAsync');
-const { ref, getDownloadURL } = require('firebase/storage');
-const { storage } = require('../utils/firebase');
+
 exports.findAllUsers = catchAsync(async (req, res, next) => {
   const users = await User.findAll({
     where: {
       status: 'active',
     },
   });
-  const usersResolve = await Promise.all(
-    users.map(async (user) => {
-      const imageRef = ref(storage, `${user.profileImgUrl}`);
-      const url = await getDownloadURL(imageRef);
-      user.profileImgUrl = url;
-      return user;
-    })
-  );
 
   res.status(200).json({
     status: 'success',
-    results: usersResolve,
+    results: users.length,
     users,
   });
 });
 
 exports.findOneUser = catchAsync(async (req, res, next) => {
   const { user } = req;
-  const imageRef = ref(storage, `${user.profileImgUrl}`);
-  const url = await getDownloadURL(imageRef);
   res.status(200).json({
     status: 'success',
     user: {
-      name: user.name,
-      email: user.email,
-      description: user.description,
-      profileImgUrl: url,
+      id: user.id,
+      fullName: user.fullName,
+      identificationNumber: user.identificationNumber,
+      birthDate: user.birthDate,
+      gender: user.gender,
+      address: user.address,
+      personalEmail: user.personalEmail,
+      mobilePhone: user.mobilePhone,
       role: user.role,
+      status: user.status,
     },
   });
 });
 
 exports.updateUser = catchAsync(async (req, res, next) => {
   const { user } = req;
-  const { name, description } = req.body;
+  const { fullName, gender, address, personalEmail, mobilePhone } = req.body;
   await user.update({
-    name,
-    description,
+    fullName: fullName,
+    gender: gender,
+    address: address,
+    personalEmail: personalEmail,
+    mobilePhone: mobilePhone,
   });
   res.status(200).json({
     status: 'success',
@@ -57,10 +54,30 @@ exports.updateUser = catchAsync(async (req, res, next) => {
 exports.deleteUser = catchAsync(async (req, res, next) => {
   const { user } = req;
   await user.update({
-    status: 'disabled',
+    status: 'inactive',
   });
   res.status(200).json({
     status: 'success',
     message: 'User deleted successfully!🎉',
+  });
+});
+
+exports.deleteUserPermanently = catchAsync(async (req, res, next) => {
+  const { user } = req;
+  await user.destroy();
+  res.status(200).json({
+    status: 'success',
+    message: 'User deleted permanently!🎉',
+  });
+});
+
+exports.banUser = catchAsync(async (req, res, next) => {
+  const { user } = req;
+  await user.update({
+    status: 'banned',
+  });
+  res.status(200).json({
+    status: 'success',
+    message: 'User banned successfully!🎉',
   });
 });
