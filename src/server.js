@@ -3,7 +3,6 @@ const { db } = require('./database/config');
 const app = require('./app');
 const initModel = require('./models/initModels');
 
-const Sockets = require('./sockets/index');
 db.authenticate()
   .then(() => {
     console.log('Database connected 😀');
@@ -13,7 +12,7 @@ db.authenticate()
   });
 initModel();
 db.sync({
-  force: false,
+  force: true,
 })
   .then(() => {
     console.log('Database synced 😁');

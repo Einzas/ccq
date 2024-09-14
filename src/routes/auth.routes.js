@@ -10,7 +10,6 @@ const authMiddleware = require('../middlewares/auth.middleware');
  */ // route for post request to create a new user
 router.post(
   '/signup',
-  upload.single('profileImgUrl'),
   validationMiddleware.createUserValidation,
   authController.signup
 );

@@ -12,6 +12,7 @@ const Feedback = db.define('Feedback', {
     type: DataTypes.BOOLEAN,
     allowNull: false,
   },
+
   comments: {
     type: DataTypes.TEXT,
     allowNull: true,

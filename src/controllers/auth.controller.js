@@ -4,12 +4,7 @@ const bcrypt = require('bcrypt');
 const generateJWT = require('./../utils/jwt');
 const AppError = require('../utils/appError');
 
-const { ref, uploadBytes, getDownloadURL } = require('firebase/storage');
-const { storage } = require('../utils/firebase');
-
 exports.signup = catchAsync(async (req, res, next) => {
-  const imgRef = ref(storage, `users/${Date.now()}-${req.file.originalname}`);
-  const imgUploaded = await uploadBytes(imgRef, req.file.buffer);
   const { name, email, password, description } = req.body;
   const salt = await bcrypt.genSalt(12);
   const encryptedPassword = await bcrypt.hash(password, salt);

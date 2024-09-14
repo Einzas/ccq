@@ -9,8 +9,6 @@ const rateLimit = require('express-rate-limit');
 const sanitizer = require('perfect-express-sanitizer');
 
 const authRouter = require('./routes/auth.routes');
-const commentRouter = require('./routes/comment.routes');
-const postRouter = require('./routes/post.routes');
 const userRouter = require('./routes/user.routes');
 const app = express();
 

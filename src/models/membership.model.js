@@ -18,4 +18,4 @@ const Membership = db.define('Membership', {
   },
 });
 
-exports.Membership = Membership;
+module.exports = Membership;

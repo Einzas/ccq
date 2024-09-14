@@ -18,4 +18,4 @@ const FinancialData = db.define('FinancialData', {
   },
 });
 
-exports.FinancialData = FinancialData;
+module.exports = FinancialData;
