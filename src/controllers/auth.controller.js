@@ -5,7 +5,16 @@ const generateJWT = require('./../utils/jwt');
 const AppError = require('../utils/appError');
 
 exports.signup = catchAsync(async (req, res, next) => {
-  const { name, email, password, description } = req.body;
+  const {
+    fullName,
+    identification,
+    birthDate,
+    gender,
+    address,
+    personalEmail,
+    mobilePhone,
+    password,
+  } = req.body;
   const salt = await bcrypt.genSalt(12);
   const encryptedPassword = await bcrypt.hash(password, salt);
 
