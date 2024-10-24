@@ -7,7 +7,7 @@ const AppError = require('../utils/appError');
 exports.signup = catchAsync(async (req, res, next) => {
   const {
     fullName,
-    identification,
+    identificationNumber,
     birthDate,
     gender,
     address,
@@ -18,30 +18,39 @@ exports.signup = catchAsync(async (req, res, next) => {
   const salt = await bcrypt.genSalt(12);
   const encryptedPassword = await bcrypt.hash(password, salt);
 
-  const user = await User.create({
-    name: name.toLowerCase(),
-    email: email.toLowerCase(),
-    password: encryptedPassword,
-    description,
-    profileImgUrl: imgUploaded.metadata.fullPath,
+  // find if user already exists
+  const userIsExist = await User.findOne({
+    where: {
+      personalEmail,
+    },
   });
-  const token = await generateJWT(user.id);
-  const imgRefDown = ref(storage, user.profileImgUrl);
-  const imgDownloadUrl = await getDownloadURL(imgRefDown);
 
-  user.profileImgUrl = imgDownloadUrl;
+  if (userIsExist) {
+    console.log(userIsExist.personalEmail);
+    return next(new AppError('User already exists! 🧨', 400));
+  }
+
+  const user = await User.create({
+    fullName,
+    identificationNumber,
+    birthDate,
+    gender,
+    address,
+    personalEmail,
+    mobilePhone,
+    password: encryptedPassword,
+  });
+
+  if (!user) {
+    return next(new AppError('User not created! 🧨', 400));
+  }
+
+  const token = await generateJWT(user.id);
+
   res.status(200).json({
     status: 'success',
     message: 'User created successfully!🎉',
     token,
-    user: {
-      id: user.id,
-      name: user.name,
-      email: user.email,
-      description: user.description,
-      profileImgUrl: user.profileImgUrl,
-      role: user.role,
-    },
   });
 });
 
@@ -64,21 +73,11 @@ exports.login = catchAsync(async (req, res, next) => {
 
   const token = await generateJWT(user.id);
 
-  const imgRef = ref(storage, user.profileImgUrl);
-  const imgDownloadUrl = await getDownloadURL(imgRef);
-
-  user.profileImgUrl = imgDownloadUrl;
-
   res.status(200).json({
     status: 'success',
     token,
     user: {
       id: user.id,
-      name: user.name,
-      email: user.email,
-      description: user.description,
-      profileImgUrl: user.profileImgUrl,
-      role: user.role,
     },
   });
 });

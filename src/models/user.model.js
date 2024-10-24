@@ -46,11 +46,13 @@ const User = db.define('user', {
   role: {
     type: DataTypes.ENUM('admin', 'partner', 'user', 'moderator'),
     allowNull: false,
+    defaultValue: 'user',
   },
 
   status: {
     type: DataTypes.ENUM('active', 'inactive', 'banned'),
     allowNull: false,
+    defaultValue: 'active',
   },
 });
 

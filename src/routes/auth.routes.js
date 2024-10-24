@@ -6,8 +6,7 @@ const router = express.Router();
 
 const authMiddleware = require('../middlewares/auth.middleware');
 
-/* const { upload } = require('../utils/multer');
- */ // route for post request to create a new user
+// route for post request to create a new user
 router.post(
   '/signup',
   validationMiddleware.createUserValidation,
