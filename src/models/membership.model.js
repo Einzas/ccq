@@ -15,6 +15,7 @@ const Membership = db.define('Membership', {
   status: {
     type: DataTypes.ENUM('active', 'inactive', 'suspended'),
     allowNull: false,
+    defaultValue: 'active',
   },
 });
 

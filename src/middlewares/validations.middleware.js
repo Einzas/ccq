@@ -60,3 +60,56 @@ exports.updateUserValidation = [
     .withMessage('Password must be at least 6 characters long!'),
   validField,
 ];
+
+exports.resetPasswordValidation = [
+  body('newPassword')
+    .notEmpty()
+    .withMessage('Password is required!')
+    .isLength({ min: 6 })
+    .withMessage('Password must be at least 6 characters long!'),
+  validField,
+];
+
+exports.forgotPasswordValidation = [
+  body('personalEmail')
+    .notEmpty()
+    .withMessage('Email cannot be empty!')
+    .isEmail()
+    .withMessage('Must be a valid email!'),
+  validField,
+];
+
+exports.verifyEmailValidation = [
+  body('token').notEmpty().withMessage('Token is required!'),
+  validField,
+];
+
+// createPreferenceValidation
+
+exports.createPreferenceValidation = [
+  body('communicationPreference')
+    .notEmpty()
+    .withMessage('Communication preference is required!'),
+  body('eventInterests').notEmpty().withMessage('Event interests is required!'),
+  body('collaborationAreas')
+    .notEmpty()
+    .withMessage('Collaboration areas is required!'),
+  validField,
+];
+
+exports.updatePreferenceValidation = [
+  body('communicationPreference')
+    .notEmpty()
+    .withMessage('Communication preference is required!'),
+  body('eventInterests').notEmpty().withMessage('Event interests is required!'),
+  body('collaborationAreas')
+    .notEmpty()
+    .withMessage('Collaboration areas is required!'),
+  validField,
+];
+
+// createMembershipValidation
+exports.createMembershipValidation = [
+  body('category').notEmpty().withMessage('Category is required!'),
+  validField,
+];
